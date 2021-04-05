@@ -28,6 +28,14 @@ function TodoList() {
 		setTodos(updatedTodos);
 	};
 
+	const completeAllTodos = () => {
+		let updatedTodos = todos.map((todo) => {
+			todo.isComplete = true;
+			return todo;
+		});
+		setTodos(updatedTodos);
+	};
+
 	const removeTodo = (id) => {
 		let removedTodoArr = todos.filter((todo) => todo.id !== id);
 		setTodos(removedTodoArr);
@@ -37,6 +45,9 @@ function TodoList() {
 			<h1>What's the plan for today?</h1>
 			<TodoForm onSubmit={addTodo} />
 			<Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+			<div className='todo-row' onClick={completeAllTodos}>
+				<h3>Check everything, I need a beer</h3>
+			</div>
 		</div>
 	);
 }
