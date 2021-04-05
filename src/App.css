@@ -125,3 +125,12 @@ h1 {
 .edit-icon {
 	color: #fff;
 }
+
+@media screen and (max-width: 520px) {
+	.todo-app {
+		width: 90%;
+	}
+	.todo-input {
+		width: 150px;
+	}
+}
