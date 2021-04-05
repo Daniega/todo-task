@@ -38,6 +38,7 @@ h1 {
 
 .todo-text {
 	word-break: break-all;
+	cursor: pointer;
 }
 
 .todo-input {
@@ -91,6 +92,10 @@ h1 {
 	padding: 16px;
 	border-radius: 5px;
 	width: 90%;
+}
+
+.complete-all {
+	cursor: pointer;
 }
 
 .todo-row h3 {

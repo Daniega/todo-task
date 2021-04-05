@@ -62,7 +62,7 @@ function TodoList() {
 			<TodoForm onSubmit={addTodo} />
 			<Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
 			{todos.length > 0 && (
-				<div className='todo-row' onClick={completeAllTodos}>
+				<div className='todo-row complete-all' onClick={completeAllTodos}>
 					<h3>Check everything, I need a beer</h3>
 				</div>
 			)}
